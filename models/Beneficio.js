@@ -5,7 +5,8 @@ const Beneficio = sequelize.define("Beneficio",{
     id:{
         type: DataTypes.INTEGER,
         autoIncrement:true,
-        primarykey:true
+        primaryKey:true,
+        allowNull:false
     },
     funcionarioId:{
         type:DataTypes.INTEGER,
@@ -24,3 +25,5 @@ const Beneficio = sequelize.define("Beneficio",{
         allowNull:false
     }
 })
+
+module.exports = Beneficio
